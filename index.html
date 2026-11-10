@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>CSSBuy spreadsheet en français | Liens, tailles et QC</title>
+  <meta name="description" content="Utilisez ce guide CSSBuy spreadsheet pour parcourir 10 catégories, comparer les variantes, lire les photos QC et estimer le coût du colis avant l’envoi.">
+  <meta name="theme-color" content="#f6f0e6">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="CSSBuy spreadsheet en français | Liens, tailles et QC">
+  <meta property="og:description" content="Dix rayons à explorer et des repères concrets pour vérifier une annonce, contrôler un article et budgéter son expédition.">
+  <link rel="preconnect" href="https://www.courtsidesneakers.com">
+  <!-- Recherche éditoriale. Les dix premiers résultats de Bing n’ont pas pu être vérifiés.
+       Dix sites repérés par une recherche web sur le terme exact ont servi à relever
+       les sujets récurrents, sans reprendre leurs textes ni leurs promesses.
+       cssbuyship.com, cssbuyhome.com, cssbuysh.com, cssbuysspreadsheet.com,
+       cssbuymall.com, cssbuyluxe.com, cssbuyfind.com, rep.tools, chinagrails.com, cssbuy.fit.
+       Vérification des sujets QC et transport : www.cssbuy.com/shop/helpCenter?id=51,
+       new.cssbuy.com/estimates et new.cssbuy.com/shipforme. -->
+  <style>
+    :root{color-scheme:light;--paper:#f6f0e6;--ink:#202c2b;--muted:#4c5d59;--red:#9b3e29;--line:#cfc5b6;--teal:#163f3b;--white:#fffaf2}
+    *,*::before,*::after{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2,h3{line-height:1.12;text-wrap:balance}
+    h1,h2{font-family:Georgia,"Times New Roman",serif;font-weight:700}
+    h1{font-size:clamp(2.7rem,6.3vw,5.25rem);letter-spacing:-.052em}
+    h2{font-size:clamp(1.85rem,4vw,3rem);letter-spacing:-.034em}
+    h3{font-size:1.16rem}
+    p{max-width:70ch}
+    a{color:inherit;text-underline-offset:.18em}
+    a:focus-visible,summary:focus-visible{outline:3px solid var(--red);outline-offset:4px}
+    .wrap{width:min(72rem,calc(100% - 2rem));margin-inline:auto}
+    .mast{border-bottom:1px solid var(--line)}
+    .mast .wrap,.foot .wrap{min-height:4rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.45rem 1rem;padding-block:.65rem}
+    .brand{font-weight:800;text-decoration:none;overflow-wrap:anywhere}
+    .tag{color:var(--red);font-size:.74rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase}
+    .hero{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);align-items:center;gap:clamp(1.25rem,5vw,4.75rem);padding-block:clamp(1.6rem,4vw,3.6rem) 1.75rem}
+    .hero h1{margin:.5rem 0 .8rem}
+    .hero p:not(.tag){color:var(--muted);max-width:47ch;font-size:clamp(1rem,2vw,1.13rem)}
+    .cover{border:1px solid var(--line);background:#fff}
+    .cover img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;padding:.65rem}
+    .cover figcaption{border-top:1px solid var(--line);background:var(--white);padding:.55rem .8rem;color:var(--muted);font-size:.8rem}
+    .directory{padding-block:1rem 2.7rem}
+    .directory h2{margin-bottom:.85rem}
+    .directory ul{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));list-style:none;margin:0;padding:0;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+    .directory li{min-width:0;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .directory a{display:flex;align-items:center;justify-content:space-between;gap:.45rem;height:100%;min-height:3rem;padding:.55rem .8rem;text-decoration:none;font-size:.9rem;font-weight:750;background:var(--white);overflow-wrap:anywhere}
+    .directory a:hover{background:#ebddcd;text-decoration:underline}
+    .directory a:focus-visible{position:relative;z-index:1;outline-offset:-4px}
+    .directory span{color:var(--red)}
+    .topics{padding-block:2rem 2.4rem;border-top:2px solid var(--ink)}
+    .topics h2,.look h2,.faq h2{margin:.4rem 0 1rem}
+    .story{display:grid;grid-template-columns:3rem minmax(0,1fr);gap:.85rem;padding:1.2rem 0;border-bottom:1px solid var(--line)}
+    .story .num{color:var(--red);font:700 1.65rem/1 Georgia,serif}
+    .story p{margin-top:.48rem}
+    .look{padding:1.8rem 0 2.8rem}
+    .look>p:not(.tag){color:var(--muted)}
+    .photos{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.85rem;margin-top:1rem}
+    .photos figure{border:1px solid var(--line);background:var(--white)}
+    .photos img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain;background:#fff}
+    .photos figcaption{padding:.65rem .75rem;font-size:.85rem;line-height:1.4}
+    .photos strong{display:block}
+    .cost{background:var(--teal);color:#fffaf2;padding:clamp(1.25rem,4vw,2.5rem);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:1rem 2rem}
+    .cost .tag{color:#ffcfb5}
+    .cost h2{margin:.35rem 0 .7rem}
+    .cost dl{margin:0}
+    .cost dt{font-weight:750}
+    .cost dd{margin:0 0 .65rem;color:#e3efeb}
+    .cost dd:last-child{margin:0}
+    .faq{padding-block:2.8rem}
+    details{border-top:1px solid var(--line)}
+    details:last-of-type{border-bottom:1px solid var(--line)}
+    summary{padding:.85rem .25rem;cursor:pointer;font-weight:750}
+    summary::marker{color:var(--red)}
+    details p{padding:0 .25rem 1rem}
+    .foot{border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}
+    @media(max-width:49rem){.directory ul{grid-template-columns:repeat(3,minmax(0,1fr))}.cost{grid-template-columns:1fr}}
+    @media(max-width:36rem){.hero{grid-template-columns:1fr;gap:1.1rem}.cover img{aspect-ratio:16/9}.directory ul,.photos{grid-template-columns:repeat(2,minmax(0,1fr))}.story{grid-template-columns:2rem minmax(0,1fr);gap:.55rem}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "name": "CSSBuy spreadsheet en français | Liens, tailles et QC",
+        "description": "Utilisez ce guide CSSBuy spreadsheet pour parcourir 10 catégories, comparer les variantes, lire les photos QC et estimer le coût du colis avant l’envoi.",
+        "inLanguage": "fr"
+      },
+      {
+        "@type": "FAQPage",
+        "name": "Questions fréquentes sur le CSSBuy spreadsheet",
+        "inLanguage": "fr",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Qu’est-ce qu’un CSSBuy spreadsheet ?",
+            "acceptedAnswer": {"@type": "Answer", "text": "C’est un tableau de repérage qui regroupe des liens produits et des informations utiles, comme la taille, le coloris ou la référence du vendeur. Cette page propose un guide de lecture et des liens vers les rayons de Hipobuyfind."}
+          },
+          {
+            "@type": "Question",
+            "name": "Comment vérifier un lien produit avant de le transmettre à un agent ?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Ouvrez la fiche d’origine, sélectionnez la taille et le coloris, puis vérifiez le stock, le prix de cette variante et les conditions de retour. Gardez l’URL de la fiche ainsi que la référence ou une capture de la variante."}
+          },
+          {
+            "@type": "Question",
+            "name": "Les photos QC permettent-elles d’authentifier un article ?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Les photos QC aident à vérifier l’aspect, les étiquettes et les défauts visibles. Pour établir l’authenticité, appuyez-vous sur des preuves de provenance ou sur une expertise dédiée."}
+          },
+          {
+            "@type": "Question",
+            "name": "Pourquoi le coût du colis change-t-il après l’emballage ?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Le devis peut changer quand les dimensions et le poids du colis emballé sont connus. Une ligne qui facture au poids volumétrique peut coûter davantage si le carton est encombrant."}
+          },
+          {
+            "@type": "Question",
+            "name": "Où mènent les liens de catégories ?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Ils ouvrent les rayons de Hipobuyfind. Les photos de marques servent de repères visuels et leur présence ne garantit pas la disponibilité des modèles illustrés."}
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/cnvnw/">
+</head>
+<body>
+  <header class="mast">
+    <div class="wrap">
+      <a class="brand" href="https://www.hipobuyfind.com">www.hipobuyfind.com</a>
+      <p class="tag">Guide d’achat indépendant · FR</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" aria-labelledby="titre">
+      <div>
+        <p class="tag">Le carnet d’achat</p>
+        <h1 id="titre">CSSBuy spreadsheet</h1>
+        <p>Une fiche peut regrouper plusieurs pointures, coloris et prix. Ce guide vous aide à retrouver la variante voulue, à demander les bonnes photos de contrôle et à calculer le coût du colis. Les dix rayons ci-dessous ouvrent le catalogue Hipobuyfind.</p>
+      </div>
+      <figure class="cover">
+        <img src="https://www.courtsidesneakers.com/cdn/shop/products/315122-111-PHSRH000-750.png?v=1589453003" width="640" height="480" alt="Nike Air Force 1 ’07 blanche vue de profil, avec semelle épaisse et logo latéral blanc" fetchpriority="high" loading="eager" decoding="async">
+        <figcaption>Nike Air Force 1 ’07 blanche · Repère visuel pour comparer une silhouette de sneaker.</figcaption>
+      </figure>
+    </section>
+
+    <nav class="directory" aria-labelledby="rayons">
+      <h2 id="rayons">Les 10 rayons</h2>
+      <ul>
+        <li><a href="https://hipobuyfind.com/category-911-Shoes.html">Chaussures <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">Sweats et pulls <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html">T-shirts <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-914-Jackets.html">Vestes <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">Pantalons et shorts <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-916-Headwear.html">Casquettes et bonnets <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-917-Sets.html">Ensembles <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">Sous-vêtements <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-919-Jersey.html">Maillots <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-920-Accessories.html">Accessoires <span aria-hidden="true">↗</span></a></li>
+      </ul>
+    </nav>
+
+    <section class="topics" aria-labelledby="dossiers">
+      <p class="tag">Avant de valider</p>
+      <h2 id="dossiers">Trois vérifications qui évitent les erreurs de commande</h2>
+      <article class="story">
+        <span class="num" aria-hidden="true">01</span>
+        <div>
+          <h3>Liens produits CSSBuy · Retrouver la bonne variante</h3>
+          <p>Un lien Taobao ou une annonce Weidian peut mener à une fiche où la photo principale diffère du coloris sélectionné. Ouvrez la fiche vendeur, choisissez la variante et notez la référence produit, la taille et la devise. Sur une fiche 1688, vérifiez aussi la quantité minimale de commande et le prix unitaire de l’option retenue.</p>
+          <p>Pour comparer deux vendeurs, relevez le prix après sélection de la variante et les frais de livraison intérieure en Chine. Datez votre vérification du stock et lisez les conditions de retour avant de payer. Gardez une capture de la sélection si le lien s’ouvre ensuite sur l’option par défaut.</p>
+        </div>
+      </article>
+      <article class="story">
+        <span class="num" aria-hidden="true">02</span>
+        <div>
+          <h3>Guide des tailles CSSBuy · Comparer des mesures prises de la même façon</h3>
+          <p>Dans un tableau de mesures en centimètres, distinguez largeur à plat et tour complet. Pour un sweat ou une veste, posez un vêtement qui vous va sur une surface plane et comparez la largeur de poitrine, la longueur du dos et la longueur des manches. Pour un pantalon, ajoutez la longueur d’entrejambe et la largeur de taille.</p>
+          <p>Pour une conversion de pointure EU, partez de la longueur du pied et du tableau propre au modèle. La mesure de la semelle intérieure et la longueur du pied correspondent à deux mesures différentes. Pour un ensemble ou un maillot personnalisé, vérifiez la taille de chaque pièce et les modalités d’échange.</p>
+        </div>
+      </article>
+      <article class="story">
+        <span class="num" aria-hidden="true">03</span>
+        <div>
+          <h3>Photos QC CSSBuy · Demander le détail qui manque</h3>
+          <p>QC désigne le contrôle qualité. Comparez les photos d’entrepôt avec la variante commandée. Si l’étiquette de taille est illisible, demandez un gros plan. Pour deux chaussures, vérifiez que les étiquettes concordent et regardez les semelles, les coutures et les traces visibles. Pour un bijou, un gros plan du fermoir montre un détail souvent caché sur la vue générale.</p>
+          <p>Si une mesure est décisive, demandez une photo avec un mètre dont le zéro est visible. En cas d’écart, vérifiez le délai de retour vendeur et les frais de renvoi avant de demander l’expédition internationale.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="look" aria-labelledby="reperes">
+      <p class="tag">Carnet visuel</p>
+      <h2 id="reperes">Quatre détails à regarder sur une fiche</h2>
+      <p>Les visuels de marque illustrent des points de comparaison. La disponibilité et les caractéristiques d’un article se vérifient sur sa propre fiche.</p>
+      <div class="photos">
+        <figure>
+          <img src="https://sg.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-monogram-denim-jacket--FVJA29EFY610_PM2_Front%20view.jpg" width="360" height="360" loading="lazy" decoding="async" alt="Veste Louis Vuitton en denim bleu monogrammé, photographiée de face">
+          <figcaption><strong>Louis Vuitton · Veste</strong> Regardez la position des poches et la coupe du col.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://cdn.clothbase.com/uploads/c7b7b467-be57-4657-bd02-88d0c860fecb/P01192731.jpg" width="360" height="360" loading="lazy" decoding="async" alt="Casquette Gucci beige et brune en toile à motif GG">
+          <figcaption><strong>Gucci · Casquette</strong> Vérifiez le tour de tête et la plage de réglage.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.hermes.com/is/image/hermesproduct/carre-dossard-brides-de-gala--781266S%2001-front-wm-3-0-0-64-64_g.jpg" width="360" height="360" loading="lazy" decoding="async" alt="Carré dossard Hermès Brides de Gala en soie cuivre et noire, vu de face">
+          <figcaption><strong>Hermès · Carré</strong> Comparez les dimensions et la finition des bords.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.christiandior.com/is/image/diorprod/B1133PMTCYD13S_SBG_E01?%24r4x5_raw%24=&amp;bfc=on&amp;crop=0%2C0%2C4000%2C5000&amp;hei=2000&amp;qlt=80&amp;scale=1&amp;wid=1600" width="360" height="360" loading="lazy" decoding="async" alt="Bracelet Dior Petit CD argenté à double rang, avec une étoile et les initiales CD">
+          <figcaption><strong>Dior · Bracelet</strong> Contrôlez la longueur réglable et le type de fermoir.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="cost" aria-labelledby="budget">
+      <div>
+        <p class="tag">Le calcul à refaire après emballage</p>
+        <h2 id="budget">Estimation des frais de livraison CSSBuy</h2>
+        <p>Établissez un budget provisoire, puis refaites le calcul avec le poids et les dimensions du carton fermé. Comparez les devis pour le pays de livraison et la même liste d’articles.</p>
+      </div>
+      <dl>
+        <dt>Coût avant l’entrepôt</dt>
+        <dd>Prix des variantes, port intérieur chinois, frais de service éventuels et taux de change appliqué.</dd>
+        <dt>Coût du colis emballé</dt>
+        <dd>Comparez le poids réel et le poids volumétrique selon la ligne. Pour un regroupement de colis, comparez le devis groupé à celui des envois séparés.</dd>
+        <dt>Coût à l’arrivée</dt>
+        <dd>Vérifiez les restrictions du transporteur et les frais à destination qui peuvent s’ajouter, notamment les taxes, droits ou frais de traitement applicables.</dd>
+      </dl>
+    </section>
+
+    <section class="faq" aria-labelledby="faq">
+      <p class="tag">Réponses rapides</p>
+      <h2 id="faq">Questions fréquentes sur le CSSBuy spreadsheet</h2>
+      <details open>
+        <summary>Qu’est-ce qu’un CSSBuy spreadsheet ?</summary>
+        <p>C’est un tableau de repérage qui regroupe des liens produits et des informations utiles, comme la taille, le coloris ou la référence du vendeur. Cette page propose un guide de lecture et des liens vers les rayons de Hipobuyfind.</p>
+      </details>
+      <details>
+        <summary>Comment vérifier un lien produit avant de le transmettre à un agent ?</summary>
+        <p>Ouvrez la fiche d’origine, sélectionnez la taille et le coloris, puis vérifiez le stock, le prix de cette variante et les conditions de retour. Gardez l’URL de la fiche ainsi que la référence ou une capture de la variante.</p>
+      </details>
+      <details>
+        <summary>Les photos QC permettent-elles d’authentifier un article ?</summary>
+        <p>Les photos QC aident à vérifier l’aspect, les étiquettes et les défauts visibles. Pour établir l’authenticité, appuyez-vous sur des preuves de provenance ou sur une expertise dédiée.</p>
+      </details>
+      <details>
+        <summary>Pourquoi le coût du colis change-t-il après l’emballage ?</summary>
+        <p>Le devis peut changer quand les dimensions et le poids du colis emballé sont connus. Une ligne qui facture au poids volumétrique peut coûter davantage si le carton est encombrant.</p>
+      </details>
+      <details>
+        <summary>Où mènent les liens de catégories ?</summary>
+        <p>Ils ouvrent les rayons de Hipobuyfind. Les photos de marques servent de repères visuels et leur présence ne garantit pas la disponibilité des modèles illustrés.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <p>Guide éditorial indépendant. Marques citées à titre d’illustration.</p>
+      <a href="https://www.hipobuyfind.com">Voir le catalogue Hipobuyfind</a>
+    </div>
+  </footer>
+</body>
+</html>
